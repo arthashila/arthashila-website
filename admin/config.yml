@@ -1,39 +1,39 @@
-```yaml
 backend:
-  name: github
-  repo: arthashila/arthashila-website
-  branch: main
-  auth_endpoint: https://long-moon-4a88.ramjikhadka.workers.dev
+name: github
+repo: arthashila/arthashila-website
+branch: main
+auth_endpoint: https://long-moon-4a88.ramjikhadka.workers.dev
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "articles"
-    label: "Articles"
-    folder: "articles"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
 
-      - label: "Date"
-        name: "date"
-        widget: "datetime"
+* name: "articles"
+  label: "Articles"
+  folder: "articles"
+  create: true
+  slug: "{{slug}}"
+  fields:
 
-      - label: "Featured Image"
-        name: "image"
-        widget: "image"
-        required: false
+  * label: "Title"
+    name: "title"
+    widget: "string"
 
-      - label: "Excerpt"
-        name: "excerpt"
-        widget: "text"
-        required: false
+  * label: "Date"
+    name: "date"
+    widget: "datetime"
 
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-```
+  * label: "Featured Image"
+    name: "image"
+    widget: "image"
+    required: false
+
+  * label: "Excerpt"
+    name: "excerpt"
+    widget: "text"
+    required: false
+
+  * label: "Body"
+    name: "body"
+    widget: "markdown"
