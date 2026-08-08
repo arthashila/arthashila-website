@@ -1,0 +1,36 @@
+backend:
+  name: github
+  repo: arthashila/arthashila-website
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "articles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Featured Image"
+        name: "image"
+        widget: "image"
+        required: false
+
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        required: false
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
