@@ -1,8 +1,9 @@
+```yaml
 backend:
   name: github
   repo: arthashila/arthashila-website
   branch: main
-  auth_endpoint: https://long-moon-4a88.ramjikhadka.workers.dev/auth
+  auth_endpoint: https://long-moon-4a88.ramjikhadka.workers.dev
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -35,3 +36,4 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+```
